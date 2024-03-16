@@ -1,0 +1,43 @@
+kiwi
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+apple
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+true + 0
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+80 / 11
+const getRandomElement = array => array[getRandomIndex(array)];
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+kiwi
+
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+kiwi + false
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange - true
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+grape * false
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+48 + orange
+
+// This is a comment
+const isEven = num => num % 2 === 0;
+apple - 17,6,79,0,91,44,3,78,98,50,29,53,20,2,96,4,64,17
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const sum = (a, b) => a + b;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
