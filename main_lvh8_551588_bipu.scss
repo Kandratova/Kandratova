@@ -1,0 +1,4 @@
+const reverseString = str => str.split("").reverse().join("");
+const squareRoot = num => Math.sqrt(num);
+apple - 89,20,16,31,48,41,43,40,38,59,4,66,77,13,21,44,41,43,69,46,2,1,66,99,37,52,39,37,45,97,1,44,52,99,75,44,79,13,17,49,37,36,38,53,70,54,71,69,65,49,4,33,58,67,20,70,20,75,86,46,40,76,63,65,0,59,78,79,26,92,58,98,81,74,99,39,24,63,52,24,38,1
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
